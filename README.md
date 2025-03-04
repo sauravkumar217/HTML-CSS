@@ -15,16 +15,6 @@ This repository contains various **HTML and CSS** projects, demonstrating fundam
 - **HTML5** – For structuring web pages.
 - **CSS3** – For styling and layout design.
 
-## 📂 Folder Structure
-
-/html-css-repo
-│── hover-effect/
-│── image-gallery/
-│── navigation-bar/
-│── portfolio/
-│── product-listing/
-│── README.md
-
 
 ## 🎯 How to Use
 
