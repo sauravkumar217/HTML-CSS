@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing with Add to Cart Buttons</title>
+    <style>
+        /* CSS will be included here */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        /* Body styling for layout and background */
+        
+        body {
+            background-color: #231b1b;
+            /* Light gray background for contrast */
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+        }
+        /* Product listing container */
+        
+        .product-listing {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            /* Responsive grid */
+        }
+        /* Product styling */
+        
+        .product {
+            background-color: #ffffff;
+            /* White background for products */
+            padding: 20px;
+            border-radius: 10px;
+            /* Rounded corners for modern look */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        /* Product title and price */
+        
+        .product h3 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        
+        .product p {
+            font-size: 1rem;
+            color: #666;
+        }
+        /* Add to Cart button styling */
+        
+        .add-to-cart {
+            padding: 10px 20px;
+            /* Comfortable padding */
+            font-size: 16px;
+            font-weight: bold;
+            /* Bold font for emphasis */
+            border: none;
+            border-radius: 25px;
+            /* Rounded corners for modern design */
+            background-color: #28a745;
+            /* Green background for contrast */
+            color: #ffffff;
+            /* White text for readability */
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            /* Smooth transitions */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+            align-self: flex-start;
+            /* Align button to the start of the flex container */
+        }
+        /* Hover effect for Add to Cart button */
+        
+        .add-to-cart:hover {
+            background-color: #218838;
+            /* Slightly darker green on hover */
+            transform: scale(1.05);
+            /* Slight scale up for interactivity */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            /* Enhanced shadow on hover */
+        }
+        /* Active (clicked) state for additional feedback */
+        
+        .add-to-cart:active {
+            transform: scale(0.98);
+            /* Slight scale down when clicked */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            /* Reduced shadow on click */
+        }
+        /* Responsive design */
+        
+        @media (max-width: 768px) {
+            .product-listing {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                /* Adjust grid for smaller screens */
+            }
+            .product {
+                padding: 15px;
+                /* Slightly smaller padding on mobile */
+            }
+            .add-to-cart {
+                padding: 8px 16px;
+                /* Smaller padding on mobile */
+                font-size: 14px;
+                /* Slightly smaller text on mobile */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .product-listing {
+                grid-template-columns: 1fr;
+                /* Stack products vertically on very small screens */
+            }
+            .product h3 {
+                font-size: 1.2rem;
+                /* Smaller title on very small screens */
+            }
+            .product p {
+                font-size: 0.9rem;
+                /* Smaller price on very small screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product-listing">
+        <div class="product">
+            <h3>Product 1</h3>
+            <p>Price: ₹599</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Product 2</h3>
+            <p>Price: ₹999</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Product 3</h3>
+            <p>Price: ₹199</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</body>
+
+</html>

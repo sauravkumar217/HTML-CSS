@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Kumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Saurav Kumar's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+
+        <!--img src="Aboutme.png" alt="About Saurav Kumar" class="section-image">-->
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Saurav Kumar" class="profile-photo">
+        <p>Hello! I'm Saurav Kumar, a dedicated software developer with a passion for building innovative and efficient solutions. I enjoy working with cutting-edge technologies to solve real-world problems.</p>
+    </section>
+    <section id="skills">
+        <!--<img src="skills.png" alt="Saurav Kumar's Skills" class="section-image">-->
+        <h2>Skills</h2>
+        <ul>
+            <li>C</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <!--<img src="project.png" alt="Saurav Kumar's Projects" class="section-image">-->
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Sorting Visualizer</h3>
+            <p>A web application that visually demonstrates various sorting algorithms like Bubble Sort, Quick Sort, and Merge Sort using animations.</p>
+            <a href="https://sauravkumar217.github.io/Soring-visualizer/" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 2: Quiz App</h3>
+            <p>A dynamic web-based Quiz App that allows users to test their knowledge on various topics. Built with HTML, CSS, and JavaScript, featuring interactive questions, real-time score updates, and a responsive design.</p>
+            <a href="https://sauravkumar217.github.io/Quizapp/" target="_blank">View on GitHub</a>
+        </div>
+        <section id="contact">
+            <!--<img src="contact.jpeg" alt="Contact Saurav Kumar" class="section-image">-->
+            <h2>Contact</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+        </section>
+
+        <footer>
+            <p>© 2025 Saurav Kumar. All Rights Reserved.</p>
+        </footer>
+
+
+</body>
+
+</html>
