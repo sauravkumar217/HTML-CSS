@@ -1,0 +1,350 @@
+/* Import Google Font for typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+}
+
+
+/* Sticky header with shadow */
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+
+/* Section layout */
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+
+/* About section with profile photo */
+
+#about {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #3498db;
+    /* Matches the blue used in skills badges */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    border-color: #3498db;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#about p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+/* Skills section with interactive badges */
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#skills li {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+#skills li:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Projects section with card layout */
+
+#projects .project {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#projects h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+}
+
+#projects p {
+    margin: 0.5rem 0 1rem;
+}
+
+#projects a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#projects a:hover {
+    color: #2980b9;
+}
+
+
+/* Contact form styling */
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact label {
+    font-weight: 400;
+    color: #2c3e50;
+}
+
+#contact input,
+#contact textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+#contact textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact button {
+    padding: 0.8rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #2980b9;
+}
+
+
+/* Footer design */
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* Dark mode for accessibility */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #ddd;
+    }
+    header {
+        background-color: #2c2c2c;
+    }
+    header h1,
+    nav a,
+    section h2,
+    #projects h3,
+    #contact label {
+        color: #ecf0f1;
+    }
+    #about h2 {
+        color: #3498db;
+        /* Keep blue in dark mode for consistency */
+    }
+    nav a:hover {
+        color: #3498db;
+    }
+    .profile-photo {
+        border-color: #555;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
+    .profile-photo:hover {
+        border-color: #3498db;
+        box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+    }
+    #skills li {
+        background-color: #2980b9;
+    }
+    #projects .project {
+        background-color: #2c2c2c;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+    }
+    #projects a {
+        color: #3498db;
+    }
+    #contact input,
+    #contact textarea {
+        background-color: #333;
+        border-color: #555;
+        color: #ddd;
+    }
+    footer {
+        background-color: #1a1a1a;
+    }
+}
+
+
+/* Responsive design breakpoints */
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    section {
+        padding: 2rem 1rem;
+    }
+    .profile-photo {
+        width: 160px;
+        height: 160px;
+    }
+    #skills ul {
+        justify-content: center;
+    }
+    #projects .project {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+    section h2 {
+        font-size: 1.5rem;
+    }
+    .profile-photo {
+        width: 130px;
+        height: 130px;
+    }
+    #projects h3 {
+        font-size: 1.2rem;
+    }
+}
+
+.section-image {
+    display: block;
+    margin: 0 auto 10px;
+    /* Centers the image with 10px space below */
+    width: 50px;
+    /* Sets a small, fixed width for the icon */
+    height: auto;
+    /* Maintains aspect ratio */
+    border-radius: 8px;
+}

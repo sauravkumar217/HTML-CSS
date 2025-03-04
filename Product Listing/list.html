@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Courses</title>
+    <style>
+        /* Reset and base styles */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            background: #031f48;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        /* Header styling */
+        
+        h1 {
+            text-align: center;
+            color: #bebfca;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+        /* Grid container */
+        
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* Card styling */
+        
+        .course-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #e8ebf5;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .course-card h2 {
+            color: #6b7280;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .course-card p {
+            color: #666;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+        
+        .course-card .duration {
+            color: #8b5cf6;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+        /* CTA Button */
+        
+        .course-card a {
+            display: inline-block;
+            background: #4a5ae8;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        
+        .course-card a:hover {
+            background: #3b47b8;
+        }
+        /* Responsive adjustments */
+        
+        @media (max-width: 600px) {
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .course-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>📚 Computer Science Courses</h1>
+    <div class="course-grid">
+        <div class="course-card">
+            <h2>Java Programming</h2>
+            <p>Learn the fundamentals of Java, OOP concepts, and advanced development.</p>
+            <p class="duration">Duration: 12 Weeks</p>
+            <a href="#">Enroll Now</a>
+        </div>
+
+        <div class="course-card">
+            <h2>Python for Beginners</h2>
+            <p>Master Python from scratch, covering data structures, automation, and AI.</p>
+            <p class="duration">Duration: 10 Weeks</p>
+            <a href="#">Enroll Now</a>
+        </div>
+
+        <div class="course-card">
+            <h2>Web Development</h2>
+            <p>Build modern websites using HTML, CSS, and JavaScript.</p>
+            <p class="duration">Duration: 8 Weeks</p>
+            <a href="#">Enroll Now</a>
+        </div>
+
+        <div class="course-card">
+            <h2>Data Structures & Algorithms</h2>
+            <p>Improve your problem-solving skills with DSA using C++/Java/Python.</p>
+            <p class="duration">Duration: 14 Weeks</p>
+            <a href="#">Enroll Now</a>
+        </div>
+
+        <div class="course-card">
+            <h2>Machine Learning & AI</h2>
+            <p>Learn ML concepts, Neural Networks, and AI applications.</p>
+            <p class="duration">Duration: 16 Weeks</p>
+            <a href="#">Enroll Now</a>
+        </div>
+
+        <div class="course-card">
+            <h2>Cybersecurity Fundamentals</h2>
+            <p>Understand security threats, cryptography, and ethical hacking.</p>
+            <p class="duration">Duration: 10 Weeks</p>
+            <a href="#">Enroll Now</a>
+        </div>
+
+        <div class="course-card">
+            <h2>Cloud Computing</h2>
+            <p>Master cloud technologies, deployment, and DevOps principles.</p>
+            <p class="duration">Duration: 12 Weeks</p>
+            <a href="#">Enroll Now</a>
+        </div>
+    </div>
+</body>
+
+</html>
